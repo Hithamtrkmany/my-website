@@ -1,0 +1,366 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0e122b, #01093d);
+    color: white;
+    overflow-x: hidden;
+    max-width: 100%;
+
+
+}
+
+/* navbar */
+.navbar {
+    background-color: #05091ad6;
+    width: 100vw;
+    z-index: 10;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.logo a.navbar-brand {
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+
+#H {
+    margin-left: 10px;
+}
+
+
+.nav-item a {
+    color: #b3b7bcd9;
+}
+
+.nav-item a:hover {
+    color: #ffff;
+}
+
+.nav-item a.active {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.nav-item a:focus {
+    color: #f54927 !important;
+}
+
+@media (max-width: 768px) {
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: kannada;
+        padding: 10px;
+    }
+
+    li.nav-item::marker {
+        color: #ffff
+    }
+}
+
+header hr {
+    position: relative;
+    border: 2px solid crimson;
+    margin: -1rem 0;
+    justify-self: start;
+    background-color: crimson;
+    height: 3px;
+    width: calc(100% - 97px);
+    z-index: 11;
+}
+
+header hr:hover {
+    border: 2px solid #4040f2;
+}
+
+/*navbar*/
+/* boody */
+
+
+.image-container {
+    display: grid;
+    width: 100%;
+    margin-top: -220px;
+    aspect-ratio: 16 / 9;
+    overflow: visible;
+}
+
+
+.image-container img:not(.ship1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stars {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.start {
+    z-index: 2;
+    width: 60%;
+    margin-top: 390px;
+    justify-self: center;
+    align-self: center;
+    object-fit: contain !important;
+}
+
+.ship1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    z-index: 6;
+    width: 100vw;
+    align-self: end;
+    filter: blur(10px);
+    margin-top: 450px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        height: 100vh;
+        padding: 20px 0;
+    }
+
+    .start {
+        width: 80%;
+        margin-top: 400px;
+    }
+
+    .ship1 {
+        filter: blur(5px);
+        height: 50%;
+        margin-top: 450px;
+    }
+}
+
+/*poto-start*/
+
+
+.info {
+    background: linear-gradient(202.637deg, #030049, #02001A, #010040, #000022);
+    border-top: 3px solid rgba(30, 18, 195, 0.537);
+    min-height: 700px;
+    width: 100vw;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: sticky;
+    z-index: 5;
+}
+
+.info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+    background: linear-gradient(to bottom, #0722ceed, transparent);
+    z-index: 10;
+}
+
+
+.demo-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.mac-window {
+    width: 100%;
+    max-width: 900px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(5, 5, 200, 0.9);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+}
+
+.mac-window:hover {
+    transform: scale(1.02);
+}
+
+.mac-header {
+    background-color: #2d2d2d;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mac-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mac-red {
+    background-color: #ff5f56;
+}
+
+.mac-yellow {
+    background-color: #ffbd2e;
+}
+
+.mac-green {
+    background-color: #27c93f;
+}
+
+.mac-body {
+    padding: 20px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.mac-body h3 {
+    font-size: 1.5rem;
+}
+
+.mac-body p {
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .mac-body {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+
+    .mac-body h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/*body */
+
+/* footer-section */
+.footer {
+    background-image: url("../images/stars.png"), linear-gradient(to bottom, #0e122b, #01093d);
+    border-top: 20px solid rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    color: #fff;
+    padding: 3rem 2rem;
+    direction: rtl;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section-logo p {
+    width: 80%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+    border-right: 3px solid red;
+}
+
+.footer-links,
+ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f54927;
+}
+
+.logo-footer img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.content-info p {
+    margin: 1rem;
+
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.348);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin-top: 2rem;
+}
+
+/* footer-section */
+
+/* skiils section */
+.icon-skills i {
+    font-size: 2rem;
+}
+
+/* skiils section */
